@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "4",
+      "name": "Manta",
+      "price": 40.35
+    },
+    {
+      "id": "6701",
+      "name": "teste",
+      "price": "12"
+    },
+    {
+      "id": "4d8d",
+      "name": "Capa de chuva",
+      "price": "50.60"
+    },
+    {
+      "id": "465e",
+      "name": "Teclaro",
+      "price": "29.90"
+    },
+    {
+      "id": "4c56",
+      "name": "mouse",
+      "price": "19.9"
+    },
+    {
+      "id": "faba",
+      "name": "Caneta",
+      "price": "2.57"
+    },
+    {
+      "id": "c8a8",
+      "name": "Lapiseira",
+      "price": "10.20"
+    },
+    {
+      "id": "18fe",
+      "name": "Gabinete Gamer",
+      "price": "854.35"
+    },
+    {
+      "id": "85e3",
+      "name": "Processador I5",
+      "price": "280.30"
+    },
+    {
+      "id": "647f",
+      "name": "suporte monitor",
+      "price": "120"
+    },
+    {
+      "id": "37bd",
+      "name": "Microfone 2",
+      "price": "100.56"
+    }
+  ]
+}
