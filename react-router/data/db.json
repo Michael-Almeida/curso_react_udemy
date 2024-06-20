@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Óculos",
+      "price": 60.0
+    },
+    {
+      "id": 2,
+      "name": "Boné",
+      "price": 84.9
+    },
+    {
+      "id": 3,
+      "name": "Camisa",
+      "price": 59.9
+    }
+  ]
+}
