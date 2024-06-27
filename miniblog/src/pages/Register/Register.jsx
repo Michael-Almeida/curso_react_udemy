@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 import styles from "./Register.module.css";
+import { useAuthentication } from "../../hooks/useAuthentication";
 
 const Register = () => {
   const [displayName, setDisplayName] = useState("");
@@ -12,11 +13,13 @@ const Register = () => {
 
   const [error, setError] = useState("");
 
-  const handleSbumit = (e) => {
+  const { createUser, error: autherror, loading } = useAuthentication();
+
+  const handleSbumit = async (e) => {
     e.preventDefault();
     setError("");
 
-    const userr = {
+    const user = {
       displayName,
       email,
       password,
@@ -26,8 +29,16 @@ const Register = () => {
       setError("As senhas precisam ser iguais");
       return;
     }
-    console.log(userr);
+
+    const res = await createUser(user);
+    console.log(user);
   };
+
+  useEffect(() => {
+    if (autherror) {
+      setError(autherror);
+    }
+  }, [autherror]);
   return (
     <div className={styles.register}>
       <h1>Cadastre-se para postar</h1>
@@ -77,7 +88,8 @@ const Register = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </label>
-        <button className="btn">Cadastrar</button>
+        {!loading && <button className="btn">Cadastrar</button>}
+        {loading && <button className="btn" disabled>Aguarde...</button>}
         {error && <p className="error">{error}</p>}
       </form>
     </div>
