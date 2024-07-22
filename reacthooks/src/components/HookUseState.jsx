@@ -24,7 +24,6 @@ const HookUseState = () => {
       <p>Variável: {userName}</p>
       <p>useState: {name}</p>
       <button onClick={changeNames}>Mudar nomes!</button>
-      <hr />
       {/* 2 useState e input */}
       <form onSubmit={handleSubmit}>
         <p>Digite a sua idade</p>
@@ -35,6 +34,7 @@ const HookUseState = () => {
         />
         <input type="submit" value="Enviar" />
         <p>Você tem {age} anos!</p>
+      <hr />
       </form>
     </div>
   );
