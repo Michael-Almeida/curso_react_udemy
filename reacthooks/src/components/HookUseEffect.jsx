@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 
+/* Permite realizar um efeito colateral conforme a mudança de certas dependências
+1. Sem Array Sempre executa
+2. Array vazio = Executa somente uma vez
+3. Com Array = Executa sempre que acontecer algo previsto [que esteja no array]
+*/
 const HookUseEffect = () => {
   // Sem array de dependência - sempre executa
   useEffect(() => {

@@ -1,5 +1,7 @@
 import { useReducer, useState } from "react";
 
+/* Hook utilizado para gerenciar estado de um componente de forma mais estruturada e previsível,
+  quando estado mais complexo ou várias transições de estado */
 const HookuseReducer = () => {
   //  Começando no useReducer
   const [number, dispatch] = useReducer((state, action) => {

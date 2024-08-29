@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+/* Permite adicionar e gerenciar estado dentro de um componente funcional  */
 const HookUseState = () => {
   let userName = "João";
 
@@ -34,7 +35,7 @@ const HookUseState = () => {
         />
         <input type="submit" value="Enviar" />
         <p>Você tem {age} anos!</p>
-      <hr />
+        <hr />
       </form>
     </div>
   );
